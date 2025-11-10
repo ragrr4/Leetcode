@@ -1,9 +1,5 @@
-//Note too slow on edge cases
 public class Solution {
-
-    List<int> solutions = new List<int>();
     int currentMin = 2147483647; // MAX int value
-
     public int MinCostClimbingStairs(int[] cost) {
         SearchSolutions(cost, -1, 0);
         return currentMin;
